@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.android.americanfootballscoreapp.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/teamA"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/heading" />
+
+                <TextView
+                    android:id="@+id/teamAScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/score"
+                    />
+
+                <TextView
+                    android:id="@+id/teamAFoulScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@color/foulColor"
+                    android:textSize="@dimen/foul" />
+
+                <Button
+                    android:id="@+id/teamAFieldGoal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/scoreButton"
+                    android:text="@string/fieldGoal"
+                    android:onClick="fieldGoalA"/>
+
+                <Button
+                    android:id="@+id/teamATouchDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/scoreButton"
+                    android:text="@string/touchDown"
+                    android:onClick="touchDownA"/>
+
+                <Button
+                    android:id="@+id/teamAExtra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/scoreButton"
+                    android:text="@string/extra"
+                    android:onClick="extraA"/>
+
+                <Button
+                    android:id="@+id/teamASafety"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/scoreButton"
+                    android:text="@string/safety"
+                    android:onClick="safetyA"/>
+
+                <Button
+                    android:id="@+id/teamAFireCatchKick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/scoreButton"
+                    android:text="@string/fareCatchKick"
+                    android:onClick="fairCatchKickA"/>
+
+                <Button
+                    android:id="@+id/teamAFoulButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/foulColor"
+                    android:text="@string/foul"
+                    android:textColor="@android:color/white"
+                    android:onClick="foulA"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/divider"
+                android:background="@android:color/darker_gray"></View>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/teamB"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/heading" />
+
+                <TextView
+                    android:id="@+id/teamBScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/score" />
+
+                <TextView
+                    android:id="@+id/teamBFoulScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@color/foulColor"
+                    android:textSize="@dimen/foul" />
+
+                <Button
+                    android:id="@+id/teamBFieldGoal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/scoreButton"
+                    android:text="@string/fieldGoal"
+                    android:onClick="fieldGoalB"/>
+
+                <Button
+                    android:id="@+id/teamBTouchDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/scoreButton"
+                    android:text="@string/touchDown"
+                    android:onClick="touchDownB"/>
+
+                <Button
+                    android:id="@+id/teamBExtra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/scoreButton"
+                    android:text="@string/extra"
+                    android:onClick="extraB"/>
+
+                <Button
+                    android:id="@+id/teamBSafety"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/scoreButton"
+                    android:text="@string/safety"
+                    android:onClick="safetyB"/>
+
+                <Button
+                    android:id="@+id/teamBFareCatchKick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/scoreButton"
+                    android:text="@string/fareCatchKick"
+                    android:onClick="fairCatchKickB"/>
+
+                <Button
+                    android:id="@+id/teamBFoulButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/foulColor"
+                    android:text="@string/foul"
+                    android:textColor="@android:color/white"
+                    android:onClick="foulB"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/resetMarginLeft"
+            android:layout_marginRight="@dimen/resetMarginLeft"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/reset"
+            android:textColor="@android:color/white"
+            android:onClick="reset"/>
+    </LinearLayout>
+</ScrollView>

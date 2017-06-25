@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">American football score app</string>
+    <string name="teamA">Detroit Lions</string>
+    <string name="teamB">Chicago Bears</string>
+    <string name="fieldGoal">Field Goal</string>
+    <string name="touchDown">Touch Down</string>
+    <string name="extra">Extra</string>
+    <string name="safety">Safety</string>
+    <string name="fareCatchKick">Fare catch kick</string>
+    <string name="foul">Foul</string>
+    <string name="reset">Reset</string>
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#004D40</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textColor">#000000</color>
+    <color name="scoreButton">#9E9E9E</color>
+    <color name="foulColor">#F44336</color>
+
+</resources>
